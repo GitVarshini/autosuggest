@@ -1,11 +1,11 @@
 h1{
-    color: black;
+    color: rgb(104, 160, 224);
 }
 #p2{
     color: blue;
 }
 #home-intro {
-    border: 3px solid black;
+    border: 3px solid rgb(104, 160, 224);
     background-color: white;
     /*border: 3px;
     border-color: black;
@@ -17,7 +17,7 @@ h1{
 }
 #nav{
     text-align: center;
-    background-color: black;
+    background-color: rgb(104, 160, 224);
     height: 25px;
     padding-top: 5px;
     margin-bottom: 10px;
@@ -27,4 +27,19 @@ h1{
     /*margin: y-axis x-axis*/
     text-decoration: none;
     color: white;
+}
+#card{
+    text-align: center;
+}
+#card-img{
+    width:300px;
+    height: 300px;
+    margin: 0 auto;
+    align-items: center;
+}
+#card-img img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
