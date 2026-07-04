@@ -20,5 +20,16 @@ function toggle(){
     }
     document.getElementById("img").src=users[curUserId].image;
     document.getElementById("card-name").innerText=users[curUserId].name;
+    document.getElementById("card-gender").innerText=users[curUserId].gender;
 }
-alert("Hello from js")
+function getRandomUser(){
+    fetch("https://randomuser.me/api/")
+    .then(function (data){
+        return data.json();
+    })
+    .then(function (parsedData){
+        document.getElementById("card-name").innerText=parsedData.results[0].name.first + " " + parsedData.results[0].name.last;
+        document.getElementById("card-gender").innerText=parsedData.results[0].gender;
+        document.getElementById("img").src=parsedData.results[0].picture.large;
+    })
+}
